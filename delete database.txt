@@ -1,0 +1,27 @@
+const deleteSql =
+ `begin
+
+    delete from job_history
+    where employee_id = :employee_id;
+
+    delete from employees
+    where employee_id = :employee_id;
+
+    :rowcount := sql%rowcount;
+
+  end;`
+
+async function del(id) {
+  const binds = {
+    employee_id: id,
+    rowcount: {
+      dir: oracledb.BIND_OUT,
+      type: oracledb.NUMBER
+    }
+  }
+  const result = await database.simpleExecute(deleteSql, binds);
+
+  return result.outBinds.rowcount === 1;
+}
+
+module.exports.delete = del;
