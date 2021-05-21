@@ -1,0 +1,55 @@
+Setup NodeJs/Express project:
+Create application directory:-
+
+mkdir nodejs-restapi
+cd nodejs-restapi
+
+Create package.json file:-
+
+nodejs-restapi>npm init
+...
+
+Press ^C at any time to quit.
+package name: (nodejs-restapi)
+version: (1.0.0)
+description: NodeJs-RestApis
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords: NodeJs-RestAPIs
+author: JSA
+license: (ISC)
+About to write to C:\Users\pc\Desktop\nodejs\nodejs-restapi\package.json:
+
+{
+  "name": "nodejs-restapi",
+  "version": "1.0.0",
+  "description": "NodeJs-RestApis",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJs-RestAPIs"
+  ],
+  "author": "JSA",
+  "license": "ISC"
+}
+
+Check content of ‘package.json’ file:
+
+
+{
+  "name": "nodejs-restapi",
+  "version": "1.0.0",
+  "description": "NodeJs-RestApis",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJs-RestAPIs"
+  ],
+  "author": "JSA",
+  "license": "ISC"
+}
